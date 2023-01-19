@@ -13,27 +13,8 @@
 		9156C829297929FC00E7EBD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9156C828297929FC00E7EBD2 /* Assets.xcassets */; };
 		9156C82C297929FC00E7EBD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9156C82A297929FC00E7EBD2 /* LaunchScreen.storyboard */; };
 		9156C82F297929FC00E7EBD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9156C82E297929FC00E7EBD2 /* main.m */; };
-		9156C839297929FC00E7EBD2 /* VoipDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9156C838297929FC00E7EBD2 /* VoipDemoTests.m */; };
-		9156C844297929FC00E7EBD2 /* VoipDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9156C843297929FC00E7EBD2 /* VoipDemoUITests.m */; };
 		C65506172707554F0EB079C1 /* libPods-VoipDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3D36C4ED6D1F10E345A5CE /* libPods-VoipDemo.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9156C835297929FC00E7EBD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9156C811297929F100E7EBD2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9156C818297929F100E7EBD2;
-			remoteInfo = VoipDemo;
-		};
-		9156C840297929FC00E7EBD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9156C811297929F100E7EBD2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9156C818297929F100E7EBD2;
-			remoteInfo = VoipDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7C3D36C4ED6D1F10E345A5CE /* libPods-VoipDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VoipDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,12 +28,6 @@
 		9156C82B297929FC00E7EBD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9156C82D297929FC00E7EBD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9156C82E297929FC00E7EBD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9156C834297929FC00E7EBD2 /* VoipDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoipDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9156C838297929FC00E7EBD2 /* VoipDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoipDemoTests.m; sourceTree = "<group>"; };
-		9156C83A297929FC00E7EBD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9156C83F297929FC00E7EBD2 /* VoipDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoipDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9156C843297929FC00E7EBD2 /* VoipDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoipDemoUITests.m; sourceTree = "<group>"; };
-		9156C845297929FC00E7EBD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B17C8627F6FFB6962465B910 /* Pods-VoipDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoipDemo.release.xcconfig"; path = "Target Support Files/Pods-VoipDemo/Pods-VoipDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C92006955082322A2848DCC1 /* Pods-VoipDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoipDemo.debug.xcconfig"; path = "Target Support Files/Pods-VoipDemo/Pods-VoipDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,20 +38,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C65506172707554F0EB079C1 /* libPods-VoipDemo.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9156C831297929FC00E7EBD2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9156C83C297929FC00E7EBD2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				9156C81B297929F100E7EBD2 /* VoipDemo */,
-				9156C837297929FC00E7EBD2 /* VoipDemoTests */,
-				9156C842297929FC00E7EBD2 /* VoipDemoUITests */,
 				9156C81A297929F100E7EBD2 /* Products */,
 				B77D826393425E89304DC611 /* Pods */,
 				4BD7E1CED4F8475678B38946 /* Frameworks */,
@@ -107,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				9156C819297929F100E7EBD2 /* VoipDemo.app */,
-				9156C834297929FC00E7EBD2 /* VoipDemoTests.xctest */,
-				9156C83F297929FC00E7EBD2 /* VoipDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,24 +84,6 @@
 				9156C82E297929FC00E7EBD2 /* main.m */,
 			);
 			path = VoipDemo;
-			sourceTree = "<group>";
-		};
-		9156C837297929FC00E7EBD2 /* VoipDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				9156C838297929FC00E7EBD2 /* VoipDemoTests.m */,
-				9156C83A297929FC00E7EBD2 /* Info.plist */,
-			);
-			path = VoipDemoTests;
-			sourceTree = "<group>";
-		};
-		9156C842297929FC00E7EBD2 /* VoipDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9156C843297929FC00E7EBD2 /* VoipDemoUITests.m */,
-				9156C845297929FC00E7EBD2 /* Info.plist */,
-			);
-			path = VoipDemoUITests;
 			sourceTree = "<group>";
 		};
 		B77D826393425E89304DC611 /* Pods */ = {
@@ -177,42 +116,6 @@
 			productReference = 9156C819297929F100E7EBD2 /* VoipDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9156C833297929FC00E7EBD2 /* VoipDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9156C84B297929FC00E7EBD2 /* Build configuration list for PBXNativeTarget "VoipDemoTests" */;
-			buildPhases = (
-				9156C830297929FC00E7EBD2 /* Sources */,
-				9156C831297929FC00E7EBD2 /* Frameworks */,
-				9156C832297929FC00E7EBD2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9156C836297929FC00E7EBD2 /* PBXTargetDependency */,
-			);
-			name = VoipDemoTests;
-			productName = VoipDemoTests;
-			productReference = 9156C834297929FC00E7EBD2 /* VoipDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		9156C83E297929FC00E7EBD2 /* VoipDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9156C84E297929FC00E7EBD2 /* Build configuration list for PBXNativeTarget "VoipDemoUITests" */;
-			buildPhases = (
-				9156C83B297929FC00E7EBD2 /* Sources */,
-				9156C83C297929FC00E7EBD2 /* Frameworks */,
-				9156C83D297929FC00E7EBD2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9156C841297929FC00E7EBD2 /* PBXTargetDependency */,
-			);
-			name = VoipDemoUITests;
-			productName = VoipDemoUITests;
-			productReference = 9156C83F297929FC00E7EBD2 /* VoipDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -223,14 +126,6 @@
 				TargetAttributes = {
 					9156C818297929F100E7EBD2 = {
 						CreatedOnToolsVersion = 12.4;
-					};
-					9156C833297929FC00E7EBD2 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 9156C818297929F100E7EBD2;
-					};
-					9156C83E297929FC00E7EBD2 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 9156C818297929F100E7EBD2;
 					};
 				};
 			};
@@ -248,8 +143,6 @@
 			projectRoot = "";
 			targets = (
 				9156C818297929F100E7EBD2 /* VoipDemo */,
-				9156C833297929FC00E7EBD2 /* VoipDemoTests */,
-				9156C83E297929FC00E7EBD2 /* VoipDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,20 +155,6 @@
 				9156C82C297929FC00E7EBD2 /* LaunchScreen.storyboard in Resources */,
 				9156C829297929FC00E7EBD2 /* Assets.xcassets in Resources */,
 				9156C827297929F100E7EBD2 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9156C832297929FC00E7EBD2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9156C83D297929FC00E7EBD2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,36 +196,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9156C830297929FC00E7EBD2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9156C839297929FC00E7EBD2 /* VoipDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9156C83B297929FC00E7EBD2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9156C844297929FC00E7EBD2 /* VoipDemoUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9156C836297929FC00E7EBD2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9156C818297929F100E7EBD2 /* VoipDemo */;
-			targetProxy = 9156C835297929FC00E7EBD2 /* PBXContainerItemProxy */;
-		};
-		9156C841297929FC00E7EBD2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9156C818297929F100E7EBD2 /* VoipDemo */;
-			targetProxy = 9156C840297929FC00E7EBD2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9156C825297929F100E7EBD2 /* Main.storyboard */ = {
@@ -518,78 +368,6 @@
 			};
 			name = Release;
 		};
-		9156C84C297929FC00E7EBD2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = VoipDemoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.VoipDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoipDemo.app/VoipDemo";
-			};
-			name = Debug;
-		};
-		9156C84D297929FC00E7EBD2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = VoipDemoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.VoipDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoipDemo.app/VoipDemo";
-			};
-			name = Release;
-		};
-		9156C84F297929FC00E7EBD2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = VoipDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.VoipDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VoipDemo;
-			};
-			name = Debug;
-		};
-		9156C850297929FC00E7EBD2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = VoipDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.VoipDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VoipDemo;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -607,24 +385,6 @@
 			buildConfigurations = (
 				9156C849297929FC00E7EBD2 /* Debug */,
 				9156C84A297929FC00E7EBD2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9156C84B297929FC00E7EBD2 /* Build configuration list for PBXNativeTarget "VoipDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9156C84C297929FC00E7EBD2 /* Debug */,
-				9156C84D297929FC00E7EBD2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9156C84E297929FC00E7EBD2 /* Build configuration list for PBXNativeTarget "VoipDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9156C84F297929FC00E7EBD2 /* Debug */,
-				9156C850297929FC00E7EBD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
