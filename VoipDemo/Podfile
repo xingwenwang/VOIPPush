@@ -1,0 +1,8 @@
+platform :ios, '9.0'
+# 指定 Master 仓库和阿里云仓库
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/aliyun/aliyun-specs.git'
+target 'VoipDemo' do
+    pod 'SDWebImage', '3.7.6'
+end
+

@@ -16,6 +16,7 @@
 		9156C82F297929FC00E7EBD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9156C82E297929FC00E7EBD2 /* main.m */; };
 		9156C839297929FC00E7EBD2 /* VoipDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9156C838297929FC00E7EBD2 /* VoipDemoTests.m */; };
 		9156C844297929FC00E7EBD2 /* VoipDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9156C843297929FC00E7EBD2 /* VoipDemoUITests.m */; };
+		C65506172707554F0EB079C1 /* libPods-VoipDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3D36C4ED6D1F10E345A5CE /* libPods-VoipDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C3D36C4ED6D1F10E345A5CE /* libPods-VoipDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VoipDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9156C819297929F100E7EBD2 /* VoipDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoipDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9156C81C297929F100E7EBD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9156C81D297929F100E7EBD2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		9156C83F297929FC00E7EBD2 /* VoipDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoipDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9156C843297929FC00E7EBD2 /* VoipDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoipDemoUITests.m; sourceTree = "<group>"; };
 		9156C845297929FC00E7EBD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17C8627F6FFB6962465B910 /* Pods-VoipDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoipDemo.release.xcconfig"; path = "Target Support Files/Pods-VoipDemo/Pods-VoipDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C92006955082322A2848DCC1 /* Pods-VoipDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoipDemo.debug.xcconfig"; path = "Target Support Files/Pods-VoipDemo/Pods-VoipDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C65506172707554F0EB079C1 /* libPods-VoipDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BD7E1CED4F8475678B38946 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C3D36C4ED6D1F10E345A5CE /* libPods-VoipDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9156C810297929F100E7EBD2 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +101,8 @@
 				9156C837297929FC00E7EBD2 /* VoipDemoTests */,
 				9156C842297929FC00E7EBD2 /* VoipDemoUITests */,
 				9156C81A297929F100E7EBD2 /* Products */,
+				B77D826393425E89304DC611 /* Pods */,
+				4BD7E1CED4F8475678B38946 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +152,16 @@
 			path = VoipDemoUITests;
 			sourceTree = "<group>";
 		};
+		B77D826393425E89304DC611 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C92006955082322A2848DCC1 /* Pods-VoipDemo.debug.xcconfig */,
+				B17C8627F6FFB6962465B910 /* Pods-VoipDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +169,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9156C848297929FC00E7EBD2 /* Build configuration list for PBXNativeTarget "VoipDemo" */;
 			buildPhases = (
+				B2B8F5DD55539EE2610CA433 /* [CP] Check Pods Manifest.lock */,
 				9156C815297929F100E7EBD2 /* Sources */,
 				9156C816297929F100E7EBD2 /* Frameworks */,
 				9156C817297929F100E7EBD2 /* Resources */,
@@ -260,6 +286,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2B8F5DD55539EE2610CA433 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoipDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9156C815297929F100E7EBD2 /* Sources */ = {
@@ -438,6 +489,7 @@
 		};
 		9156C849297929FC00E7EBD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92006955082322A2848DCC1 /* Pods-VoipDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +507,7 @@
 		};
 		9156C84A297929FC00E7EBD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B17C8627F6FFB6962465B910 /* Pods-VoipDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
