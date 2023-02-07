@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9143CD3D29923DFF0052D984 /* PushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9143CD3C29923DFF0052D984 /* PushManager.m */; };
+		9143CD4029923E850052D984 /* ProviderDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9143CD3F29923E850052D984 /* ProviderDelegate.m */; };
+		9143CD4829923EE60052D984 /* Call.m in Sources */ = {isa = PBXBuildFile; fileRef = 9143CD4529923EE50052D984 /* Call.m */; };
+		9143CD4929923EE60052D984 /* CallManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9143CD4629923EE50052D984 /* CallManager.m */; };
 		9156C81E297929F100E7EBD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9156C81D297929F100E7EBD2 /* AppDelegate.m */; };
 		9156C824297929F100E7EBD2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9156C823297929F100E7EBD2 /* ViewController.m */; };
 		9156C827297929F100E7EBD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9156C825297929F100E7EBD2 /* Main.storyboard */; };
@@ -18,6 +22,14 @@
 
 /* Begin PBXFileReference section */
 		7C3D36C4ED6D1F10E345A5CE /* libPods-VoipDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VoipDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9143CD3B29923DFF0052D984 /* PushManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushManager.h; sourceTree = "<group>"; };
+		9143CD3C29923DFF0052D984 /* PushManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushManager.m; sourceTree = "<group>"; };
+		9143CD3E29923E850052D984 /* ProviderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProviderDelegate.h; sourceTree = "<group>"; };
+		9143CD3F29923E850052D984 /* ProviderDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProviderDelegate.m; sourceTree = "<group>"; };
+		9143CD4429923EE50052D984 /* CallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallManager.h; sourceTree = "<group>"; };
+		9143CD4529923EE50052D984 /* Call.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Call.m; sourceTree = "<group>"; };
+		9143CD4629923EE50052D984 /* CallManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallManager.m; sourceTree = "<group>"; };
+		9143CD4729923EE60052D984 /* Call.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Call.h; sourceTree = "<group>"; };
 		9156C819297929F100E7EBD2 /* VoipDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoipDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9156C81C297929F100E7EBD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9156C81D297929F100E7EBD2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,6 +64,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9143CD3929923C600052D984 /* PushAndCall */ = {
+			isa = PBXGroup;
+			children = (
+				9143CD4329923ECD0052D984 /* Call */,
+				9143CD3A29923DD00052D984 /* Provider */,
+			);
+			path = PushAndCall;
+			sourceTree = "<group>";
+		};
+		9143CD3A29923DD00052D984 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				9143CD3B29923DFF0052D984 /* PushManager.h */,
+				9143CD3C29923DFF0052D984 /* PushManager.m */,
+				9143CD3E29923E850052D984 /* ProviderDelegate.h */,
+				9143CD3F29923E850052D984 /* ProviderDelegate.m */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		9143CD4329923ECD0052D984 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				9143CD4729923EE60052D984 /* Call.h */,
+				9143CD4529923EE50052D984 /* Call.m */,
+				9143CD4429923EE50052D984 /* CallManager.h */,
+				9143CD4629923EE50052D984 /* CallManager.m */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
 		9156C810297929F100E7EBD2 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +116,7 @@
 		9156C81B297929F100E7EBD2 /* VoipDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9143CD3929923C600052D984 /* PushAndCall */,
 				9156C81C297929F100E7EBD2 /* AppDelegate.h */,
 				9156C81D297929F100E7EBD2 /* AppDelegate.m */,
 				9156C822297929F100E7EBD2 /* ViewController.h */,
@@ -193,6 +237,10 @@
 				9156C824297929F100E7EBD2 /* ViewController.m in Sources */,
 				9156C81E297929F100E7EBD2 /* AppDelegate.m in Sources */,
 				9156C82F297929FC00E7EBD2 /* main.m in Sources */,
+				9143CD4829923EE60052D984 /* Call.m in Sources */,
+				9143CD3D29923DFF0052D984 /* PushManager.m in Sources */,
+				9143CD4029923E850052D984 /* ProviderDelegate.m in Sources */,
+				9143CD4929923EE60052D984 /* CallManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,11 +387,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S2633WH4B;
 				INFOPLIST_FILE = VoipDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.VoipDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pajk.jppersonaldoc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -358,11 +407,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S2633WH4B;
 				INFOPLIST_FILE = VoipDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.VoipDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pajk.jppersonaldoc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
