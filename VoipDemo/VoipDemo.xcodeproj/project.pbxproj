@@ -17,6 +17,8 @@
 		9156C829297929FC00E7EBD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9156C828297929FC00E7EBD2 /* Assets.xcassets */; };
 		9156C82C297929FC00E7EBD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9156C82A297929FC00E7EBD2 /* LaunchScreen.storyboard */; };
 		9156C82F297929FC00E7EBD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9156C82E297929FC00E7EBD2 /* main.m */; };
+		9159195E2993763600032FD3 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9159195D2993763600032FD3 /* PushKit.framework */; };
+		915919602993767C00032FD3 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9159195F2993767C00032FD3 /* CallKit.framework */; };
 		C65506172707554F0EB079C1 /* libPods-VoipDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3D36C4ED6D1F10E345A5CE /* libPods-VoipDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,9 @@
 		9156C82B297929FC00E7EBD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9156C82D297929FC00E7EBD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9156C82E297929FC00E7EBD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9159195D2993763600032FD3 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		9159195F2993767C00032FD3 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
+		915919612993784700032FD3 /* VoipDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoipDemo.entitlements; sourceTree = "<group>"; };
 		B17C8627F6FFB6962465B910 /* Pods-VoipDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoipDemo.release.xcconfig"; path = "Target Support Files/Pods-VoipDemo/Pods-VoipDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C92006955082322A2848DCC1 /* Pods-VoipDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoipDemo.debug.xcconfig"; path = "Target Support Files/Pods-VoipDemo/Pods-VoipDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				915919602993767C00032FD3 /* CallKit.framework in Frameworks */,
+				9159195E2993763600032FD3 /* PushKit.framework in Frameworks */,
 				C65506172707554F0EB079C1 /* libPods-VoipDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +66,8 @@
 		4BD7E1CED4F8475678B38946 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9159195F2993767C00032FD3 /* CallKit.framework */,
+				9159195D2993763600032FD3 /* PushKit.framework */,
 				7C3D36C4ED6D1F10E345A5CE /* libPods-VoipDemo.a */,
 			);
 			name = Frameworks;
@@ -116,6 +125,7 @@
 		9156C81B297929F100E7EBD2 /* VoipDemo */ = {
 			isa = PBXGroup;
 			children = (
+				915919612993784700032FD3 /* VoipDemo.entitlements */,
 				9143CD3929923C600052D984 /* PushAndCall */,
 				9156C81C297929F100E7EBD2 /* AppDelegate.h */,
 				9156C81D297929F100E7EBD2 /* AppDelegate.m */,
@@ -384,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VoipDemo/VoipDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S2633WH4B;
 				INFOPLIST_FILE = VoipDemo/Info.plist;
@@ -404,6 +415,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VoipDemo/VoipDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S2633WH4B;
 				INFOPLIST_FILE = VoipDemo/Info.plist;

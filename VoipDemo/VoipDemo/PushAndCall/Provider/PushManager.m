@@ -93,6 +93,11 @@
 }
 
 
+//普通静默推送执行挂断
+-(void)pushTypeStop:(NSDictionary *)pushInfo{
+    
+}
+
 @end
 
 
